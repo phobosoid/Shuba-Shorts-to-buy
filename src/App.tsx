@@ -152,7 +152,7 @@ export default function App() {
         <motion.section 
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="relative min-h-[400px] lg:h-[500px] rounded-[40px] overflow-hidden bg-primary-container group mb-16 shadow-xl"
+          className="relative min-h-[520px] sm:min-h-[600px] lg:h-[650px] rounded-[40px] overflow-hidden bg-primary-container group mb-16 shadow-xl"
         >
           <img 
             src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=1543&auto=format&fit=crop" 
@@ -161,12 +161,12 @@ export default function App() {
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent" />
-          <div className="relative h-full flex flex-col justify-center p-8 sm:p-14 lg:p-20 max-w-2xl text-white">
+          <div className="relative h-full flex flex-col justify-center px-6 py-12 sm:px-14 sm:py-14 lg:p-20 max-w-2xl text-white border-none">
             <motion.span 
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-block bg-primary text-white text-[10px] font-bold px-5 py-1.5 rounded-full mb-8 w-fit tracking-[0.2em]"
+              className="inline-block bg-primary text-white text-[10px] font-bold px-5 py-1.5 rounded-full mb-6 w-fit tracking-[0.2em]"
             >
               РЕЦЕПТ ДНЯ
             </motion.span>
@@ -174,7 +174,7 @@ export default function App() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-8 leading-[1.05]"
+              className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-[1.05]"
             >
               Домашнє полуничне морозиво: смак літа
             </motion.h1>
@@ -182,7 +182,7 @@ export default function App() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="text-lg sm:text-xl opacity-90 mb-10 font-sans max-w-lg leading-relaxed"
+              className="text-base sm:text-lg opacity-90 mb-8 font-sans max-w-lg leading-relaxed"
             >
               Найкращий десерт для спекотного дня — натуральний, ніжний та дуже ароматний. Готуємо без зайвих зусиль.
             </motion.p>
@@ -190,12 +190,12 @@ export default function App() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="flex flex-wrap items-center gap-8 mt-auto sm:mt-0"
+              className="flex flex-wrap items-center gap-6 mt-4"
             >
-              <button className="bg-primary text-white px-10 py-4 rounded-2xl font-bold hover:translate-y-[-4px] transition-all shadow-xl active:scale-95 leading-none text-lg"> Дивитись рецепт </button>
+              <button className="bg-primary text-white px-8 py-4 rounded-2xl font-bold hover:translate-y-[-4px] transition-all shadow-xl active:scale-95 leading-none text-base"> Дивитись рецепт </button>
               <div className="flex items-center gap-6 text-white/80 text-sm font-bold">
                 <span className="flex items-center gap-2"><Clock className="w-5 h-5 text-primary" /> 45 хв</span>
-                <span className="flex items-center gap-2 relative">
+                <span className="flex items-center gap-2">
                   <BarChart2 className="w-5 h-5 text-primary" /> 
                   Легко
                 </span>
