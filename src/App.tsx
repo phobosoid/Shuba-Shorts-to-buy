@@ -395,15 +395,15 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="flex-1 p-6 md:p-10 lg:p-12 flex flex-col bg-surface overflow-y-auto">
-                <div className="flex justify-between items-start mb-8">
+              <div className="flex-1 p-6 md:p-10 lg:p-12 flex flex-col bg-surface overflow-y-auto max-h-full">
+                <div className="flex justify-between items-start mb-8 shrink-0">
                   <div className="max-w-md">
                     <h2 className="text-2xl md:text-3xl font-serif font-bold mb-3 tracking-tight leading-tight">Зберіть набір для рецепта</h2>
                     <p className="text-on-surface-variant text-sm md:text-base leading-relaxed opacity-80">Ми автоматично підібрали найкращі інгредієнти, щоб результат був бездоганним.</p>
                   </div>
                   <button 
                     onClick={() => setSelectedShort(null)}
-                    className="p-2 hover:bg-secondary-container rounded-full transition-all"
+                    className="p-2 hover:bg-secondary-container rounded-full transition-all shrink-0 ml-4"
                   >
                     <X className="w-6 h-6" />
                   </button>
@@ -412,13 +412,13 @@ export default function App() {
                 <motion.button 
                   whileHover={{ scale: 1.01 }}
                   whileTap={{ scale: 0.99 }}
-                  className="w-full bg-[#1D1D1B] text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-3 mb-6 hover:bg-black transition-all shadow-lg text-base"
+                  className="w-full bg-[#1D1D1B] text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-3 mb-6 hover:bg-black transition-all shadow-lg text-base shrink-0"
                 >
                   <ShoppingCart className="w-5 h-5 stroke-[2.5]" />
                   Додати всі інгредієнти
                 </motion.button>
 
-                <div className="bg-[#F8F7F2] p-6 rounded-2xl flex gap-4 mb-8 relative border border-primary/10 overflow-hidden group/truck">
+                <div className="bg-[#F8F7F2] p-6 rounded-2xl flex gap-4 mb-8 relative border border-primary/10 overflow-hidden group/truck shrink-0">
                   <div className="w-10 h-10 shrink-0 bg-white rounded-xl flex items-center justify-center text-primary shadow-sm border border-primary/5">
                     <Truck className="w-5 h-5 transition-transform group-hover/truck:translate-x-1" />
                   </div>
@@ -465,7 +465,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <button className="flex items-center gap-2 text-xs font-bold text-on-surface-variant hover:text-primary transition-all mt-auto group w-fit">
+                <button className="flex items-center gap-2 text-xs font-bold text-on-surface-variant hover:text-primary transition-all mt-8 group w-fit shrink-0 pb-4">
                   <span className="border-b-2 border-transparent group-hover:border-primary">Налаштувати інгредієнти окремо</span>
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
