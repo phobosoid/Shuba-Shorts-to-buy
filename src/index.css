@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-primary: #695f15;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #e3d57f;
+  --color-on-primary-container: #665c11;
+  
+  --color-secondary: #5f5e5c;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #e5e2de;
+  --color-on-secondary-container: #656461;
+
+  --color-tertiary: #5e5f58;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #d5d4cb;
+  --color-on-tertiary-container: #5b5c55;
+
+  --color-surface: #fcf9f5;
+  --color-on-surface: #1c1c1a;
+  --color-on-surface-variant: #4a4739;
+  
+  --color-background: #f3f2e9; /* Tertiary Beige base from guidance */
+  
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  
+  --spacing-gutter: 24px;
+  --spacing-margin-desktop: 40px;
+  --spacing-margin-mobile: 16px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+.recipe-card-shadow {
+  box-shadow: 0 4px 20px rgba(29, 29, 27, 0.04);
+}
